@@ -526,6 +526,14 @@ background: linear-gradient(180deg, rgba(170,124,14,1) 0%, rgba(217,197,79,1) 0%
 /**
  * #service 
  */
+.service-icon {
+    height: 60px;
+    width: 80px;
+    display: block;
+    float: left;
+    margin-right: 25px;
+    filter: invert(16%) sepia(20%) saturate(6676%) hue-rotate(234deg) brightness(89%) contrast(122%);
+}
 
 .service { margin-bottom: 35px; }
 
