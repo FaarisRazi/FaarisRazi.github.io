@@ -1,4 +1,17 @@
 /*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -839,11 +852,55 @@ font-size: 18px; }
 /**
  * skills 
  */
+.skill{
+  margin-bottom: 40px;
+}
 
-.skills-title { margin-bottom: 20px; }
+#skills_list{
+  cursor: default;
+background: linear-gradient(180deg, rgba(240,218,74,1) 0%, rgba(255,254,169,1) 10%, rgba(255,254,169,1) 90%, rgba(240,218,74,1) 100%);
+}
 
-.skills-list { padding: 20px; }
+.skills{
+  width: 100%;
+  max-width: 900px; /* Set the desired width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
 
+#skills_title { margin-bottom: 20px; }
+
+.skills-list {
+  padding: 30px 5px 0px 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  
+}
+.skills-list li{
+  flex-basis: calc(33.33% - 100px); /* Adjust the width of each list item (image) */
+  margin-bottom: 20px;
+}
+
+.skills-list figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75px;
+  margin: 0 auto;
+}
+
+.skills-list img{
+  max-width: 75%;
+  height: 60px;
+}
+
+.skills-list figcaption{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
@@ -1235,6 +1292,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
+@media (min-width: 0px) {
+
+  .skills-list li{
+    flex-basis: auto; /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 250px) {
+
+  .skills-list li{
+    flex-basis: calc(33.33% - 10px); /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 424px) {
+
+  .skills-list li{
+    flex-basis: calc(33.33% - 35px); /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
+  }
+}
 
 /**
  * responsive larger than 450px screen
@@ -1246,7 +1328,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .clients-item { min-width: calc(33.33% - 20px); }
 
 
 
@@ -1257,6 +1339,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+
+  .skills-list li{
+    flex-basis: calc(33.33% - 45px); /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -1347,7 +1434,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box { border-radius: 30px; }
 
   .avatar-box img { width: 120px; 
-    background: linear-gradient(180deg, rgba(170,124,14,1) 0%, rgba(79,198,217,1) 0%, rgba(255,237,119,1) 0%, rgba(255,254,133,1) 47%, rgba(255,255,176,1) 100%, rgba(251,255,214,1) 100%);
+    background: linear-gradient(180deg, rgba(240,218,74,1) 0%, rgba(255,254,169,1) 0%, rgba(255,254,169,1) 90%, rgba(240,218,74,1) 100%);
+/*    background: linear-gradient(180deg, rgba(170,124,14,1) 0%, rgba(79,198,217,1) 0%, rgba(255,237,119,1) 0%, rgba(255,254,133,1) 47%, rgba(255,255,176,1) 100%, rgba(251,255,214,1) 100%);*/
     border-radius:20px;}
 
   .info-content .name { margin-bottom: 15px; }
@@ -1548,6 +1636,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
+  .skills-list li{
+    flex-basis: calc(33.33% - 50px); /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
+  }
+
 }
 
 
@@ -1646,6 +1739,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn {
     width: max-content;
     margin-left: auto;
+  }
+
+
+
+
+  /**
+   * SKILLS
+   */
+
+  .skills-list li{
+    flex-basis: calc(33.33% - 90px); /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
   }
   
 }
@@ -1762,6 +1867,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .blog-banner-box { height: 230px; }
+
+
+  .skills-list li{
+    flex-basis: calc(33.33% - 150px); /* Adjust the width of each list item (image) */
+    margin-bottom: 20px;
+  }
+
 
 }
 
